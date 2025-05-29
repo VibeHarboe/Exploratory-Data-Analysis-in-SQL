@@ -1,67 +1,42 @@
 # 📘 docs/
 
-This folder contains structured documentation to support the understanding, use, and presentation of all SQL techniques and concepts covered in the project. It is intended as a **reference and explainer layer** for anyone reviewing the repository — from peers and recruiters to hiring managers and fellow data professionals.
+This folder contains structured documentation to support the understanding, use, and presentation of all SQL techniques and concepts covered in the project. It serves as a **reference and learning companion** for anyone reviewing the repository — including peers, hiring managers, and fellow data professionals.
 
 ---
 
-## 📂 Folder Purpose
+## 📂 Purpose
 
-Organize and centralize all documentation in markdown format that explains:
+The documentation is designed to:
 
-* SQL theory and syntax used
-* Practical examples and use cases
-* Annotated guides for window functions, CTEs, correlations, and more
-* Supplementary resources and learning notes (e.g., from DataCamp, exam prep, etc.)
+* Explain key SQL techniques with context and examples
+* Supplement `.sql` files with theoretical background
+* Serve as a practical knowledge base for real-world data work
 
-This documentation mirrors what might be available in a `wiki/` or `knowledge_base/` in a real-world data team.
-
----
-
-## 📑 Content Types
-
-### ✅ Cheatsheets
-
-Quick-reference guides for SQL topics like:
-
-* Window functions
-* Aggregations
-* Joins
-* Data types and casting
-* Temporal functions (e.g., `DATE_TRUNC`, `EXTRACT`, `NOW()`)
-
-### ✅ Explained Concepts
-
-More in-depth explanations with examples:
-
-* `window-functions-explained.md`
-* `ctes-and-subqueries.md`
-* `eda-strategies-in-sql.md`
-
-### ✅ Study Notes
-
-Curated insights and key learnings extracted from the DataCamp SQL curriculum:
-
-* `Exploratory Data Analysis in SQL_study_notes.md`
-* Annotated flashcards and exam prep materials
+It reflects the kind of internal documentation you'd find in professional analytics teams, data wikis, or onboarding guides.
 
 ---
 
-## 🧭 Folder Strategy
+## 🗂️ Overview of Included Files
 
-Every markdown document in `docs/` serves as both a standalone learning aid and a supporting layer to the actual `.sql` files and project workflow.
-
-* Each file is **task-specific**, meaning it's designed to answer a clear question or support a particular concept.
-* Use internal cross-links if documents are related.
-* Designed for reuse across future projects.
-
----
-
-## 📌 How to Use
-
-* Pair `.sql` code with its corresponding `.md` explainer
-* Use when onboarding new analysts or reviewing concepts pre-interview
-* Export or print for physical learning (e.g. laminated cheat sheets 💡)
+| Filename                               | Description                                                            |
+| -------------------------------------- | ---------------------------------------------------------------------- |
+| `data-types-and-casting.md`            | Understanding SQL data types and how to convert between them           |
+| `summary-functions.md`                 | Descriptive statistics: `AVG()`, `MIN()`, `MAX()`, `STDDEV()`          |
+| `grouping-and-aggregation.md`          | Techniques for summarizing data across dimensions with `GROUP BY`      |
+| `text-cleaning-and-standardization.md` | String cleaning and formatting functions for consistent text data      |
+| `time-difference-and-lag.md`           | Analyzing temporal gaps with `LAG()`, `LEAD()`, and timestamp math     |
+| `generate-series-and-binning.md`       | Creating dynamic date ranges and numeric bins with `generate_series()` |
+| `outlier-handling-and-percentiles.md`  | Identifying and excluding outliers using percentiles                   |
+| `date-truncation-and-time-series.md`   | Aggregating and analyzing trends over time using `DATE_TRUNC()`        |
 
 ---
 
-*Document to understand. Script to analyze.*
+## ✅ Recommended Usage
+
+* Read alongside SQL notebooks and scripts to understand the logic behind queries
+* Reuse snippets and best practices in new data projects
+* Use as interview prep, onboarding documentation, or a portfolio knowledge showcase
+
+---
+
+> *“Document to understand. Script to analyze.”*
