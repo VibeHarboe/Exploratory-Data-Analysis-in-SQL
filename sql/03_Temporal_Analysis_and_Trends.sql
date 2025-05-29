@@ -1,4 +1,3 @@
--- 03_Temporal_Analysis_and_Trends.sql
 -- #########################################################
 -- SQL strategies for time-based analysis and trend detection
 -- including date functions, filtering, lag analysis,
