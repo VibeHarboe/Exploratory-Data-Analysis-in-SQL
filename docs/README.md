@@ -1,1 +1,1 @@
-#
+# Notes, definitions, and explanations
