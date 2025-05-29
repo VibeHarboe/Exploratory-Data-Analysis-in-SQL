@@ -1,96 +1,82 @@
 # Exploratory Data Analysis in SQL
 
-> **Practical project repository based on the DataCamp course "Exploratory Data Analysis in SQL"**
+Welcome to the **Exploratory Data Analysis (EDA) in SQL** repository. This project showcases essential SQL skills and techniques learned through DataCamp's Exploratory Data Analysis in SQL course.
 
-This repository contains hands-on exercises, SQL scripts, and explanations based on the official DataCamp curriculum. It serves as documentation of practical skills within EDA using SQL and can be used as a reference, study tool, or portfolio project.
+## Project Overview
 
----
+This repository demonstrates the key concepts, methodologies, and practical applications of exploratory data analysis using PostgreSQL. You'll find structured SQL scripts, comprehensive documentation, and examples of real-world analyses.
 
-## 🎓 Background
-
-The course and this project cover the full EDA process in SQL—from dataset preparation and outlier detection to grouping, summarization, and NULL handling. The project is structured in modules for systematic review or repetition.
-
-DataCamp Certificate: *Exploratory Data Analysis in SQL* ✅
-See certificate image or PDF in the `docs/` folder.
-
----
-
-## 📄 Structure
+## Repository Structure
 
 ```
-eda-sql-project/
-├── data/                    # Example datasets used for SQL queries
-├── notebooks/              # EDA modules divided into separate SQL files
-├── screenshots/            # Results and IDE screenshots for visual documentation
-├── docs/                   # Theory, explanations, and project documentation
-├── .gitignore              # Ignore e.g. data dumps and system files
-└── README.md               # This file
+Exploratory-Data-Analysis-in-SQL/
+├── LICENSE
+├── README.md
+├── certificate/
+│   ├── Exploratory Data Analysis Certificate.png
+│   └── README.md
+├── data/
+│   ├── README.md
+│   └── erdiagram.png
+├── docs/
+│   ├── Numeric-data-summary.md
+│   ├── Text-data-analysis.md
+│   ├── Date-time-analysis.md
+│   └── README.md
+├── sql/
+│   ├── 01_Database_Structure.sql
+│   ├── 02_Numeric_Analysis.sql
+│   ├── 03_Text_Analysis.sql
+│   ├── 04_Date_Time_Analysis.sql
+│   └── README.md
+└── visuals/
+    ├── README.md
+    └── Data-distribution-example.png
 ```
 
----
+## Key SQL Topics
 
-## 🔄 Modules and Topics
+### 1. Database Structure
 
-| Module | Topic                | Description                                          |
-| ------ | -------------------- | ---------------------------------------------------- |
-| 01     | NULL Handling        | Identifying and managing missing values              |
-| 02     | Outlier Detection    | Filtering extreme values using HAVING and conditions |
-| 03     | Summary Statistics   | Using `AVG()`, `MIN()`, `MAX()`, `STDDEV()`, etc.    |
-| 04     | Filtering & Sorting  | Combining `WHERE`, `ORDER BY`, `LIMIT`               |
-| 05     | Aggregation & Groups | `GROUP BY`, `HAVING`, nested aggregates              |
+* Understanding tables, primary keys, foreign keys, and constraints.
+* Essential commands for database exploration: `information_schema` queries.
 
----
+### 2. Numeric Data Analysis
 
-## 📊 Example: Outlier Detection
+* Aggregation and summary statistics: `AVG`, `MIN`, `MAX`, `SUM`.
+* Variance, standard deviation, correlation, and binning techniques.
 
-```sql
-SELECT name, revenue
-FROM companies
-WHERE revenue > 10000000;
-```
+### 3. Text Data Analysis
 
-*Description: Simple filter to identify revenue outliers.*
+* Character types (`char`, `varchar`, `text`), case conversion (`UPPER`, `LOWER`).
+* Splitting, trimming, and concatenating text data.
 
----
+### 4. Date and Time Analysis
 
-## 📖 Documentation and Explanation
+* Handling dates, timestamps, and intervals.
+* Aggregation by date/time, `date_trunc`, `extract`, and generating date/time series.
 
-See the `docs/` folder for:
+## Practical Examples
 
-* `eda_overview.md` – Introduction to EDA and SQL approach
-* `handling-missing-values.sql` – Handling NULLs and NA analysis
-* `explained_examples.md` – Walkthrough of selected course questions and answers
+* SQL scripts in the `/sql` directory illustrate typical EDA tasks such as:
 
----
+  * Summarizing data distributions and identifying outliers.
+  * Cleaning text fields for consistent analysis.
+  * Aggregating data by time intervals to identify trends and patterns.
 
-## 🛠️ Tools and Setup
+## Certification
 
-* SQL engine: PostgreSQL, SQLite, or equivalent
-* IDE: DBeaver, DataGrip, pgAdmin, etc.
+Find the course certificate in the `/certificate` directory, confirming successful completion of DataCamp's Exploratory Data Analysis in SQL.
 
-Clone the project:
+## Documentation
 
-```bash
-git clone https://github.com/YOUR_USERNAME/eda-sql-project.git
-```
+Detailed markdown files in `/docs` provide clear explanations and examples for each SQL concept, making the repository a valuable reference.
 
----
+## Data & Visuals
 
-## 📈 Portfolio Use
+* ER diagrams and relevant images are stored in the `/data` directory.
+* Visual examples of data distributions and analyses are in the `/visuals` directory.
 
-This repository is part of my professional data portfolio and demonstrates the application of SQL for EDA tasks. It is suitable for:
+## License
 
-* Recruiters and hiring partners
-* Students or self-learners focusing on SQL
-* Mentors and instructors
-
----
-
-## 🚀 Future Improvements
-
-* Add Lightdash visuals or `.png` screenshots
-* Integrate with `dbt` for pipeline use cases
-
----
-
-> Made with ❤️ & SQL – by Vibe Harboe Christensen
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
