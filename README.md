@@ -19,9 +19,14 @@ Exploratory-Data-Analysis-in-SQL/
 │   ├── README.md
 │   └── erdiagram.png
 ├── docs/
-│   ├── Numeric-data-summary.md
-│   ├── Text-data-analysis.md
-│   ├── Date-time-analysis.md
+│   ├── data-types-and-casting.md
+│   ├── summary-functions.md
+│   ├── grouping-and-aggregation.md
+│   ├── text-cleaning-and-standardization.md
+│   ├── time-difference-and-lag.md
+│   ├── generate-series-and-binning.md
+│   ├── outlier-handling-and-percentiles.md
+│   ├── date-truncation-and-time-series.md
 │   └── README.md
 ├── sql/
 │   ├── 01_Database_Structure.sql
@@ -70,7 +75,16 @@ Find the course certificate in the `/certificate` directory, confirming successf
 
 ## Documentation 📖
 
-Detailed markdown files in `/docs` provide clear explanations and examples for each SQL concept, making the repository a valuable reference.
+Detailed markdown files in `/docs` provide clear explanations and examples for each SQL concept, making the repository a valuable reference:
+
+* Data types and casting
+* Summary functions
+* Grouping and aggregation
+* Text cleaning and formatting
+* Time differences and lagging
+* Series generation and binning
+* Outlier handling and percentiles
+* Date truncation and time-series analysis
 
 ## Data & Visuals 📈
 
