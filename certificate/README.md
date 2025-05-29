@@ -8,4 +8,4 @@
 
 $~$
 
-![Exploratory Data Analysis in SQL](https://github.com/VibeHarboe/Data-Manipulation-in-SQL/blob/ce34bfbc03e73c3fec957ce52398bec57bceb4ca/visuals/PostgreSQL%20Summary%20Stats%20and%20Window%20Functions.png "PostgreSQL Summary Stats and Window Functions")
+![Exploratory Data Analysis in SQL](https://github.com/VibeHarboe/Exploratory-Data-Analysis-in-SQL/blob/ec2ca772aa0d7d040e032cca6569ebd8be341725/visuals/Exploratory%20Data%20Analysis%20in%20SQL.png "Exploratory Data Analysis in SQL")
