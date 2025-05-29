@@ -1,4 +1,3 @@
--- 02_Numeric_Summary_and_Distributions.sql
 -- #########################################################
 -- PostgreSQL functions and logic for summarizing, grouping,
 -- analyzing numeric data, and building value distributions.
