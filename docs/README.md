@@ -1,1 +1,3 @@
-# Notes, definitions, and explanations
+# Docs folder
+
+Notes, definitions, and explanations
