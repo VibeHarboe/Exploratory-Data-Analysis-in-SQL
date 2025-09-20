@@ -41,7 +41,7 @@ LIMIT 10;
 -- Use case: Identify dispersion and distribution of key metrics
 -- ========================================================
 
-WITH avg_profit AS (
+WITH rofit_stats AS (
   SELECT 
     sector,
     MIN(profits) AS min_profit,
@@ -56,7 +56,7 @@ SELECT
   'TOTAL' AS sector_label,
   MIN(profits),
   MAX(profits),
-  AVG(profits),
+  AVG(profits) AS avg_profit,
   STDDEV(profits)
 FROM 
   fortune500
