@@ -1,58 +1,66 @@
 # ⏳ Time Differences and Lag Functions in SQL
 
-Analyser, der afhænger af rækkefølge, historik eller forsinkelser mellem begivenheder, kræver specialiserede SQL-funktioner som `LAG()`, `LEAD()` og forskelle mellem timestamps.
+Analyses that depend on sequence, history, or delays between events require specialized SQL functions such as `LAG()`, `LEAD()`, and differences between timestamps.
 
 ---
 
-## 📌 Centrale funktioner
+## 📌 Key Functions
 
-| Funktion                           | Formål                                            | Eksempel                                         |
-| ---------------------------------- | ------------------------------------------------- | ------------------------------------------------ |
-| `LAG(column) OVER (ORDER BY ...)`  | Returnerer værdien fra forrige række              | `LAG(date_created) OVER (ORDER BY date_created)` |
-| `LEAD(column) OVER (ORDER BY ...)` | Returnerer værdien fra næste række                | `LEAD(profits) OVER (ORDER BY year)`             |
-| `ts2 - ts1`                        | Subtraktion mellem to timestamps (giver interval) | `date_completed - date_created`                  |
-| `EXTRACT(EPOCH FROM interval)`     | Konverterer et interval til sekunder (numerisk)   | `EXTRACT(EPOCH FROM gap)`                        |
+| Function | Purpose | Example |
+| --------------------------------- | ------------------------------------------------ | ----------------------------------------------- |
+| `LAG(column) OVER (ORDER BY ...)` | Returns the value from the previous row | `LAG(date_created) OVER (ORDER BY date_created)` |
+| `LEAD(column) OVER (ORDER BY ...)`| Returns the value from the next row | `LEAD(profits) OVER (ORDER BY year)` |
+| `ts2 - ts1` | Subtraction between two timestamps (gives interval) | `date_completed - date_created` |
+| `EXTRACT(EPOCH FROM interval)` | Converts an interval into seconds (numeric) | `EXTRACT(EPOCH FROM gap)` |                  |
 
 ---
 
-## 🔍 Eksempler
+## 🔍 Examples
 
-### 1. Tid mellem to hændelser:
+
+### 1. Time between two events:
+
 
 ```sql
 SELECT
-  date_created,
-  LAG(date_created) OVER (ORDER BY date_created) AS previous,
-  date_created - LAG(date_created) OVER (ORDER BY date_created) AS gap
+date_created,
+LAG(date_created) OVER (ORDER BY date_created) AS previous,
+date_created - LAG(date_created) OVER (ORDER BY date_created) AS gap
 FROM evanston311;
 ```
 
-### 2. Forskellen i værdi over tid:
+### 2. Difference in value over time:
+
 
 ```sql
 SELECT
-  date,
-  profits,
-  profits - LAG(profits) OVER (ORDER BY date) AS change
+date,
+profits,
+profits - LAG(profits) OVER (ORDER BY date) AS change
 FROM company_financials;
 ```
 
-### 3. Gennemsnitlig tid mellem hændelser:
+
+### 3. Average time between events:
+
 
 ```sql
 WITH gaps AS (
-  SELECT
-    date_created - LAG(date_created) OVER (ORDER BY date_created) AS gap
-  FROM evanston311
+SELECT
+date_created - LAG(date_created) OVER (ORDER BY date_created) AS gap
+FROM evanston311
 )
 SELECT AVG(gap) FROM gaps;
 ```
 
+
 ---
 
-## 🎯 Brugsscenarier
 
-* Tidsbaseret procesanalyse
-* Kunderejse- og flow-analyser
-* Forsinkelser mellem hændelser
-* Finansiel performance og udvikling over tid
+## 🎯 Use Cases
+
+
+* Time-based process analysis
+* Customer journey and flow analysis
+* Delays between events
+* Financial performance and development over time
