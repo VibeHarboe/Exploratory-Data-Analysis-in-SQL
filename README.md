@@ -29,7 +29,7 @@ Exploratory-Data-Analysis-in-SQL/
 │   ├── date-truncation-and-time-series.md
 │   └── README.md
 ├── sql/
-│   ├── 01_Database_Structure.sql
+│   ├── 01_Data_01_Profiling_and_Schema_Exploration.sql
 │   ├── 02_Numeric_Analysis.sql
 │   ├── 03_Text_Analysis.sql
 │   ├── 04_Date_Time_Analysis.sql
