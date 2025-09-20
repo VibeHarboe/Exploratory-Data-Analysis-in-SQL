@@ -106,7 +106,7 @@ This project is part of my DataCamp training path in SQL for data analysis. Each
 ├── 01_Database_Structure.sql
 ├── 02_Numeric_Summary_and_Distributions.sql
 ├── 03_Text_Categoricals_and_Indicators.sql
-├── 04_Event_Timing_and_Duration.sql
+├── 03_Temporal_Analysis_and_Trends.sql
 └── README.md
 ```
 
