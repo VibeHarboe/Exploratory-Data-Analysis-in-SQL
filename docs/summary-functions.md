@@ -31,13 +31,13 @@ Summary (or aggregate) functions are at the heart of Exploratory Data Analysis i
 
 ## ✅ Examples from This Project
 
-| Use Case                      | Function(s) Used                  |
-| ----------------------------- | --------------------------------- |
-| Number of requests per street | `COUNT(*)`, `GROUP BY street`     |
-| Detect missing zip codes      | `COUNT(*) - COUNT(zip)`           |
-| Revenue summary by sector     | `AVG(revenue)`, `STDDEV(revenue)` |
-| Daily question count trends   | `AVG(count)` per `DATE_TRUNC()`   |
-| Outlier detection             | `PERCENTILE_DISC(0.95)`           |
+| Use Case                      | Function(s) Used                    |
+| ----------------------------- | ----------------------------------- |
+| Number of requests per street | `COUNT(*)`, `GROUP BY street`       |
+| Detect missing zip codes      | `COUNT(*) - COUNT(zip)`             |
+| Revenue summary by sector     | `AVG(revenues)`, `STDDEV(revenues)` |
+| Daily question count trends   | `AVG(count)` per `DATE_TRUNC()`     |
+| Outlier detection             | `PERCENTILE_DISC(0.95)`             |
 
 ---
 
