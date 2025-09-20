@@ -41,7 +41,7 @@ LIMIT 10;
 -- Use case: Identify dispersion and distribution of key metrics
 -- ========================================================
 
-WITH rofit_stats AS (
+WITH profit_stats AS (
   SELECT 
     sector,
     MIN(profits) AS min_profit,
