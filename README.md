@@ -13,12 +13,16 @@ Exploratory-Data-Analysis-in-SQL/
 ├── LICENSE
 ├── README.md
 ├── certificate/
-│   ├── Exploratory Data Analysis Certificate.png
 │   └── README.md
 ├── data/
 │   ├── README.md
 │   └── erdiagram.png
+│   ├── ev311.csv
+│   ├── fortune.csv
+│   ├── sql_eda_dbcreate.sql.txt
+│   └── stackexchange.csv
 ├── docs/
+│   ├── README.md
 │   ├── data-types-and-casting.md
 │   ├── date-truncation-and-time-series.md
 │   ├── eda-overview.md
@@ -28,7 +32,6 @@ Exploratory-Data-Analysis-in-SQL/
 │   ├── summary-functions.md
 │   ├── text-cleaning-and-standardization.md
 │   ├── time-difference-and-lag.md
-│   └── README.md
 ├── sql/
 │   ├── 01_Data_01_Profiling_and_Schema_Exploration.sql
 │   ├── 02_Numeric_Summary_and_Distributions.sql
