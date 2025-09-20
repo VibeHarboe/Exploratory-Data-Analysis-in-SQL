@@ -35,7 +35,7 @@ Exploratory-Data-Analysis-in-SQL/
 ├── sql/
 │   ├── 01_Database_Structure_and_Schema_Exploration.sql
 │   ├── 02_Numeric_Summary_and_Distributions.sql
-│   ├── 03_Temporal_Analysis_and_Trends.sql
+│   ├── 03_Text_and_Categorical_Analysis.sql
 │   ├── 04_Event_Timing_and_Duration.sql
 │   └── README.md
 └── visuals/
