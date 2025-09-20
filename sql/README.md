@@ -40,9 +40,9 @@ This folder showcases practical SQL techniques for performing **Exploratory Data
 
 ---
 
-### 03 – Temporal Analysis and Trends
+### 03 – Text and Categorical Analysis
 
-**Goal**: Clean, group, and extract structured meaning from messy or unstructured string-based data.
+**Goal**: Clean, standardize, and categorize messy string-based fields to unlock structured insights from text-heavy data.
 
 **Key Concepts:**
 
@@ -105,7 +105,7 @@ This project is part of my DataCamp training path in SQL for data analysis. Each
 /sql
 ├── 01_Database_Structure_and_Schema_Exploration.sql
 ├── 02_Numeric_Summary_and_Distributions.sql
-├── 03_Temporal_Analysis_and_Trends.sql
+├── 03_Text_and_Categorical_Analysis.sql
 ├── 04_Event_Timing_and_Duration.sql
 └── README.md
 ```
