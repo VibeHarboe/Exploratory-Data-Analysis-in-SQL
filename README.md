@@ -33,7 +33,7 @@ Exploratory-Data-Analysis-in-SQL/
 │   ├── text-cleaning-and-standardization.md
 │   ├── time-difference-and-lag.md
 ├── sql/
-│   ├── 01_Data_01_Profiling_and_Schema_Exploration.sql
+│   ├── 01_Database_Structure_and_Schema_Exploration.sql
 │   ├── 02_Numeric_Summary_and_Distributions.sql
 │   ├── 03_Temporal_Analysis_and_Trends.sql
 │   ├── 04_Event_Timing_and_Duration.sql
