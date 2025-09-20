@@ -40,7 +40,7 @@ This folder showcases practical SQL techniques for performing **Exploratory Data
 
 ---
 
-### 03 – Text, Categoricals, and Pattern Matching
+### 03 – Temporal Analysis and Trends
 
 **Goal**: Clean, group, and extract structured meaning from messy or unstructured string-based data.
 
