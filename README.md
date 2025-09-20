@@ -30,9 +30,9 @@ Exploratory-Data-Analysis-in-SQL/
 │   └── README.md
 ├── sql/
 │   ├── 01_Data_01_Profiling_and_Schema_Exploration.sql
-│   ├── 02_Numeric_Analysis.sql
-│   ├── 03_Text_Analysis.sql
-│   ├── 04_Date_Time_Analysis.sql
+│   ├── 02_Numeric_Summary_and_Distributions.sql
+│   ├── 03_Temporal_Analysis_and_Trends.sql
+│   ├── 04_Event_Timing_and_Duration.sql
 │   └── README.md
 └── visuals/
     ├── README.md
