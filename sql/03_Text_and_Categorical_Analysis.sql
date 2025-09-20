@@ -1,7 +1,7 @@
 -- #########################################################
--- SQL strategies for time-based analysis and trend detection
--- including date functions, filtering, lag analysis,
--- moving averages, and cohort segmentation.
+-- SQL strategies for cleaning and recoding text-heavy fields
+-- including string parsing, categorical standardization,
+-- indicator creation, and descriptive frequency analysis.
 -- #########################################################
 
 
