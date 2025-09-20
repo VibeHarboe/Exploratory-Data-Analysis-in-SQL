@@ -20,13 +20,14 @@ Exploratory-Data-Analysis-in-SQL/
 │   └── erdiagram.png
 ├── docs/
 │   ├── data-types-and-casting.md
-│   ├── summary-functions.md
+│   ├── date-truncation-and-time-series.md
+│   ├── eda-overview.md
+│   ├── generate-series-and-binning.md
 │   ├── grouping-and-aggregation.md
+│   ├── outlier-handling-and-percentiles.md
+│   ├── summary-functions.md
 │   ├── text-cleaning-and-standardization.md
 │   ├── time-difference-and-lag.md
-│   ├── generate-series-and-binning.md
-│   ├── outlier-handling-and-percentiles.md
-│   ├── date-truncation-and-time-series.md
 │   └── README.md
 ├── sql/
 │   ├── 01_Data_01_Profiling_and_Schema_Exploration.sql
